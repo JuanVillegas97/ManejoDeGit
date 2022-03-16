@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+    
+      <h1 >{{message}}</h3>
+      <button v-on:click="imgShow">Show the image!</button>
+
+      <button v-on:click="inputShow">Show my name!</button>
+      <input v-model="input">
+      <div v-if="visible"><img v-bind:src="img"></div>
+          
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
